@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+}
+
+h1 + p {
+    font-size: 1.3125rem;
+}
+
+h2{
+    font-size: 1.3125rem;
+}
+
+h2 + p {
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+h1 + p,
+h2 + p {
+    color: #f18119;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+strong {
+    font-weight: 900;
+}
+
+.top-text {
+    color: #f18119;
+    font-weight: 900;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    order: -1;
+    padding-top: 0.3em;
+    border-top: 6px solid #f18119;
+    border-image: linear-gradient(to right,#ffa51d, #ff713b) 1;
+}
+
+.fine-print {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+}
+
+/* Intro Section */
+
+.intro {
+    background-image: url(./img/ribs.jpg);
+    background-color: #404040;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    padding: 0 0.5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+/* Main content Section */
+
+.main-content {
+    padding: 2em 1em;
+}
+
+.intro > *,
+.main-content > * {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Form */
+
+.forms {
+    width: 80%;
+    max-width: 300px;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+
+input {
+    margin-bottom: 1em;
+    text-align: inherit;
+    border: 1px solid #404040;
+    transform: scale(1);
+    transition: transform 0.25s;
+}
+
+input:focus {
+    transform: scale(1.05);
+}
+
+input,
+.btn {
+    width: 100%;
+    padding: 0.5em;
+    font-family: inherit;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    padding: 1em 1.5em;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: white;
+    background: linear-gradient(to right,#ffa51d, #ff713b );
+    transform: scale(1);
+    transition: transform 0.25s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    transform: scale(1.05);
+}
+
+/* Media queries */
+
+@media (min-width: 500px) {
+    body {
+        font-size: 1.125rem;
+        display: flex;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+
+    .intro,
+    .main-content {
+        width: 50%;
+        min-height: 100vh;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
